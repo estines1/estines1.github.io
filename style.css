@@ -31,6 +31,10 @@
       padding: 0 3.2rem;
   }
 
+.marginBottomSm {
+  margin-bottom: 4.8rem !important;
+}
+
 /* || General Typography  Styles*/
 .sectionHeading {
   padding-top: 2rem;
@@ -267,8 +271,8 @@
 
 .skillExperienceIcon {
   background-color: #fff;
-  height: 15px;
-  width: 15px;
+  height: 1.5rem;
+  width: 1.5rem;
   border-radius: 100%;
 }
 
@@ -287,6 +291,43 @@
 
 .skillOrange .skillExperienceIcon {
   background-color: #EE8A17;
+}
+
+/* Project Section */
+
+.projectHeading {
+  color: #eee;
+  font-size: 3.2rem;
+  margin-bottom: 2rem;
+}
+
+.projectContainer {
+  background-color: #333;
+  margin-bottom: 4rem;
+}
+
+.projectContainer img {
+  width: 100%;
+  transform: translateY(1rem);
+}
+
+.projectButton:link, .projectButton:visited {
+  overflow: hidden;
+  padding: 1rem 0;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  background-color: #444;
+  color: #fff;
+  font-size: 2rem;
+  text-align: center;
+  transition: background-color 0.3s;
+  font-weight: 600;
+}
+
+.projectButton:hover, .projectButton:active {
+  background-color: #FBC648;
+  color:#3e3e3e;
 }
 
 

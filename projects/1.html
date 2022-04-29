@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elliott Stines | Full Stack Software Engineer</title>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- end google fonts -->
+
+    <!-- my stylesheets -->
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../queries.css">
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="manifest" href="../site.webmanifest">
+
+
+    <!-- font-awesome -->
+    <script src="https://kit.fontawesome.com/06ac31fdff.js" crossorigin="anonymous"></script>
+
+    <!-- script.js -->
+    <script defer src="../script.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navMain">
+            <ul class="navMainList">
+                <li>
+                    <a href="../index.html#about" class="navMainLink">
+                        <i class="fa-solid fa-user navIcon"></i>
+                        About
+                    </a>
+                </li>
+                <li><a href="../index.html#skills" class="navMainLink">
+                        <i class="fa-solid fa-code navIcon"></i>
+                        Skills
+                    </a></li>
+                <li><a href="../index.html#projects" class="navMainLink">
+                        <i class="fa-solid fa-display navIcon"></i>
+                        Projects
+                    </a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="container sectionAbout">
+            <h1 class="sectionHeading">49er Developers Full Stack Application</h1>
+            <div class="sectionUnderline"></div>
+            <p class="sectionText">Note: This page is still a work in progress.</p>
+
+            <h2 class="projectHeading">Overview</h2>
+            <div class="skillHeadingUnderline"></div>
+            <p class="sectionText">I created this application from scratch over the course of a semester in the Network
+                Based
+                Application Development course I took this spring.</p>
+            <p class="sectionText">The main purpose of the website is to give UNC Charlotte students a place to create
+                and view upcoming events related to computer science courses and other development related topics.</p>
+            <p class="sectionText marginBottomSm">The website allows users to sign up and login to an account; create,
+                view, update,
+                and
+                delete connection events. The user and event data is stored persistently utilizing a database.
+            </p>
+
+            <h2 class="projectHeading">Technologies</h2>
+            <div class="skillHeadingUnderline"></div>
+            <p class="sectionText">The application utilizes Node.js, Express, and MongoDB,
+                for the back-end
+                functionality. The application is modularized using the Model-View-Controller (MVC) architecture.
+            </p>
+            <p class="sectionText marginBottomSm">
+                The
+                front-end of the website was created utilizing HTML5 (EJS), CSS, and
+                JavaScript. The application utilizes media queries to make the layout responsive across a variety of
+                screen sizes including desktop, mobile, and tablet devices.
+            </p>
+
+            <h2 class="projectHeading">Security</h2>
+            <div class="skillHeadingUnderline"></div>
+            <p class="sectionText">When creating an account user passwords are hashed and salted, so in the event the
+                database is compromised, the plaintext user passwords would not be exposed. Additionaly, when signing
+                up, the email address entered must be unique to prevent an attacker from creating another account with
+                the same email address as a user.
+            </p>
+            <p class="sectionText">Users must be logged in to an account to create, edit, or delete a post. Only
+                authenticated users that have a matching session ID are able to edit and delete
+                the event posts they created.
+            </p>
+
+            <p class="sectionText marginBottomSm">All fields that take user input are validated and sanitized before
+                being stored to
+                prevent cross-site
+                scripting (XSS) attacks.
+            </p>
+
+
+
+            <h2 class="projectHeading">Home Page</h2>
+            <div class="skillHeadingUnderline"></div>
+
+            <div class="projectContainer">
+                <img src="../img/project1.png">
+            </div>
+
+            <h2 class="projectHeading">Connections Page</h2>
+            <div class="skillHeadingUnderline"></div>
+
+            <div class="projectContainer">
+                <img src="../img/project2.png">
+            </div>
+
+            <h2 class="projectHeading">Connection Page</h2>
+            <div class="skillHeadingUnderline"></div>
+
+            <div class="projectContainer">
+                <img src="../img/project3.png">
+            </div>
+
+            <h2 class="projectHeading">New Connection Page</h2>
+            <div class="skillHeadingUnderline"></div>
+
+            <div class="projectContainer">
+                <img src="../img/project4.png">
+            </div>
+
+            <h2 class="projectHeading">Edit Connection Page</h2>
+            <div class="skillHeadingUnderline"></div>
+
+            <div class="projectContainer">
+                <img src="../img/project5.png">
+            </div>
+
+            <h2 class="projectHeading">Profile Page</h2>
+            <div class="skillHeadingUnderline"></div>
+
+            <div class="projectContainer">
+                <img src="../img/project6.png">
+            </div>
+
+        </section>
+
+
+        <footer>
+            <div class="footerIcons">
+                <a href="https://github.com/estines1" target="_blank" rel="noopener" class="footerIcon"><i
+                        class="fa-brands fa-github"></i></a>
+                <a href="https://linkedin.com/in/elliottstines/" target="_blank" rel="noopener"
+                    aria-label="LinkedIn Profile" class="footerIcon"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="media/StinesResume.pdf" target="_blank" rel="noopener" aria-label="Resume"
+                    class="footerIcon"><i class="fa-solid fa-file-lines"></i></a>
+            </div>
+            <p class="footerCopyright">&copy; Elliott Stines, 2022</p>
+        </footer>
+    </main>
+</body>
+
+</html>
