@@ -312,18 +312,26 @@
   margin-bottom: 4rem;
 }
 
+.projectHover {
+  transition: all 0.3s;
+}
+
+.projectHover:hover {
+  transform: scale(1.02);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 29px 0px;
+}
+
 .projectContainer img {
   width: 100%;
   transform: translateY(1rem);
 }
 
 .projectButton:link, .projectButton:visited {
-  overflow: hidden;
   padding: 1rem 0;
   text-decoration: none;
   display: block;
   width: 100%;
-  background-color: #444;
+  background-color: #585858;
   color: #fff;
   font-size: 2rem;
   text-align: center;
