@@ -69,7 +69,8 @@
                 Application Development course I took this spring.</p>
             <p class="sectionText">The main purpose of the website is to give UNC Charlotte students a place to create
                 and view upcoming events related to computer science courses and other development related topics.</p>
-            <p class="sectionText marginBottomSm">The website allows users to sign up and login to an account; create,
+            <p class="sectionText marginBottomSm">The website allows users to sign up and login to an account, and
+                create,
                 view, update,
                 and
                 delete connection events. The user and event data is stored persistently utilizing a database.
@@ -77,7 +78,7 @@
 
             <h2 class="projectHeading">Technologies</h2>
             <div class="skillHeadingUnderline"></div>
-            <p class="sectionText">The application utilizes Node.js, Express, and MongoDB, and a few other
+            <p class="sectionText">The application utilizes Node.js, Express, MongoDB, and a few other
                 packages
                 for the back-end
                 functionality. The application is modularized using the Model-View-Controller (MVC) architecture.
@@ -91,14 +92,15 @@
 
             <h2 class="projectHeading">Security</h2>
             <div class="skillHeadingUnderline"></div>
-            <p class="sectionText">When creating an account user passwords are hashed and salted, so in the event the
-                database is compromised, the plaintext user passwords would not be exposed. Additionaly, when signing
+            <p class="sectionText">When creating an account user passwords are hashed using the bcrypt library, so in
+                the event the
+                database is compromised, user passwords would not be exposed in plaintext. Additionaly, when signing
                 up, the email address entered must be unique to prevent an attacker from creating another account with
                 the same email address as a user.
             </p>
-            <p class="sectionText">Users must be logged in to an account to create, edit, or delete a post. Only
-                authenticated users that have a matching session ID are able to edit and delete
-                the event posts they created.
+            <p class="sectionText">Users must be logged in to an account to create, edit, or delete a post. Users are
+                only able to edit and delete the event posts they created, and are prevented from attempting to edit or
+                delete another user's post.
             </p>
 
             <p class="sectionText marginBottomSm">All fields that take user input are validated and sanitized before
